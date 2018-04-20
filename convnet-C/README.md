@@ -1,5 +1,5 @@
 
-##A C implemention for convolutional network
+## A C implemention for convolutional network
 
 This is a project for implementing a convolutional network by C, the convolutional network is
 constructed as following:
@@ -16,24 +16,24 @@ and we assume no padding here. Then W, F, S, P satisfy:
 
 ![formula_1](./img/formula_1.png)
 
-###Forward propagation
+### Forward propagation
 The forward propagation is the convolution of the input and the filter as following:
 
 ![formula_2](./img/formula_2.png)
 
-###Back propagation
+### Back propagation
 The back propagation is the transfer of gradient by chain of rule, we have:
 
 ![formula_3](./img/formula_3.png)
 
-###Loss function
+### Loss function
 The loss function L is the softmax\_cross\_entropy of logits, we also give the formula of its forward and back propagation.
 
-####softmax_forward:
+#### softmax_forward:
 
 ![softmax_forward](./img/softmax_forward.png)
 
-####softmax_backward:
+#### softmax_backward:
 
 The softmax_backward depends labels, we have
 
@@ -47,6 +47,6 @@ if j equals to lb,
 
 ![softmax_backward_3](./img/softmax_backward_3.png)
 
-####cross\_entrop\_forward:
+#### cross\_entrop\_forward:
 
 ![cross\_entrop\_forward](./img/cross_entropy_forward.png)
