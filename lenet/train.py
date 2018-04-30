@@ -75,5 +75,6 @@ with tf.Session() as sess:
 
             writer.add_summary(summ, global_step=step)
         print("Optimization finished!")
+        writer.close()
         saver_train.save(sess, TRAIN_MODEL_PATH)
         saver_pred.save(sess, PRED_MODEL_PATH, write_meta_graph=False)
